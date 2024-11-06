@@ -1,0 +1,19 @@
+{{- range until (.Values.count | int) }}
+---
+apiVersion: rds.aws.upbound.io/v1beta1
+kind: ClusterInstance
+metadata:
+  name: aurora-instance-{{ . }}  
+  labels:
+    testing.upbound.io/example-name: aurora
+spec:
+  forProvider:
+    clusterIdentifierSelector:
+      matchLabels:
+        testing.upbound.io/example-name: aurora
+    engine: aurora-postgresql
+    instanceClass: db.r5.large
+    region: us-west-1
+    providerConfigRef:
+      name: aws-provider
+{{- end }}
