@@ -3,12 +3,12 @@ entries:
   aurora:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-11-06T13:09:03.258906+05:30"
+    created: "2024-11-06T15:18:05.343863+05:30"
     description: A Helm chart for Kubernetes crossplane compositions
-    digest: e73427f7bdd033f7bd4308132b91048038bdd26b9f1d35653072ab28854e52ee
+    digest: 101a4d05a4fc83446857109e5fc403629c2ca98720cc66016ecd730eb4e20df8
     name: aurora
     type: application
     urls:
-    - https://github.com/saiharsha-plivo/helmcharts/releases/download/v1.0.0/aurora-0.1.0.tgz
+    - https://saiharsha-plivo.github.io/helmcharts/aurora-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-06T13:09:03.258566+05:30"
+generated: "2024-11-06T15:18:05.343444+05:30"
